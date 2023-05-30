@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .cat-container {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .cat {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: 150px;
+      left: 0;
+      transition: all 1s ease-in-out;
+    }
+
+    .cat img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .cat.animate {
+      transform: translateX(200px);
+    }
+  </style>
+</head>
+<body>
+  <h2>Cat Animation</h2>
+  <div class="cat-container">
+    <div class="cat">
+      <img src="cat.png" alt="Cat">
+    </div>
+  </div>
+
+  <script>
+    var catElement = document.querySelector('.cat');
+
+    function animateCat() {
+      catElement.classList.add('animate');
+    }
+
+    catElement.addEventListener('animationend', function () {
+      catElement.classList.remove('animate');
+    });
+  </script>
+</body>
+</html>

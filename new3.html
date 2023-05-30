@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="img">
+    <div>
+    <div>
+    <div class="container">
+    <div >logo</div>
+    <div >product</div>
+    <div >catogery</div>
+    <div>Aboutus</div>
+   <div class="text">profile</div>
+    <div><button>logout</button></div>
+</div>
+<div class="box"> 
+    <div>
+      <a href="#">home</a>
+    </div>
+    <div>product</div>
+    <div>vehicles</div>
+    <div>bikes</div>
+    <div>cars</div>
+    <div>medicines</div>
+    <div>books</div>
+    <div>computers</div>
+    <div>mobile</div>
+    <div>homeapp</div>
+    </div>
+    <div>
+        <form class="form">
+            <h1 class="h1">Login Here</h1>
+            <input class="input" type="text" name="email" placeholder="Enter email">
+            <input class="input" type="text" name="password" placeholder="Enter password">
+            <button class="btn">Login</button>
+            <p class="link"><a href="#">Forget Password</a></p>
+
+
+        </form>
+    </div>
+  
+   <div class="footer">@copyrights 2023</div>
+</div>
+</body>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+            display: flex;
+            height: 10vh;
+            justify-content: flex-start;
+           padding:1.5%;
+           justify-content: space-between;
+           background-color: rgba(0, 0, 0, 0.712) ;
+           color:  rgba(255, 255, 255, 0.699);
+        
+        }
+        .text{
+            padding-right: 2%;
+            margin-left: 30%;
+            
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            height: 80vh;
+            width:20%;
+           background-color: rgba(0, 0, 0, 0.712) ;
+           color: rgba(255, 255, 255, 0.699);
+            align-items: center;
+            padding: 2%;
+            justify-content:space-evenly;   
+        }
+        .img{
+
+            background-image: url(https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_960_720.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height:100vh;
+            width: 100vw;
+        
+           
+        }
+        .footer{
+            background-color: black;
+            height: 10vh;
+            text-align: center;
+            color: white;
+            padding-top: 2%;
+        }
+        .form{
+            width: 300px;
+            height: 350px;
+            background-size: 20%;
+            background-color: rgba(0, 0, 0, 0.712);
+            position: absolute;
+            top:20% ;
+            left: 70%;
+            padding: 25px;
+
+        }
+      .h1{
+        background-color:rgba(255, 255, 255, 0.699);
+        text-align: center;
+        font-family: sans-serif;
+        border-radius: 10px;
+        margin-top:20px ;
+      }
+      .input{
+        height: 35px;
+        width: 250px;
+        background: transparent;
+        color:rgba(255, 255, 255, 0.699) ;
+       border-right: none;
+       border-left: none;
+       border-top: none;
+       margin-top: 20px;
+       letter-spacing: 1px;
+       font-family: sans-serif;
+      }
+      ::placeholder{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .btn{
+        height: 40px;
+        width: 250px;
+        margin-top: 10%;
+        background-color:rgb(96, 169, 228) ;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        
+      }
+      .btn:hover{
+        background:rgba(255, 255, 255, 0.699);
+      }
+      .link {
+        padding-top:20px ;
+        padding-left: 70px;
+        font : rgba(255, 255, 255, 0.699);
+      }
+</style>
+</html>
